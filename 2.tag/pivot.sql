@@ -1,0 +1,6 @@
+-- w/ PIVOT
+SELECT * FROM (
+    SELECT DATE_TRUNC('MINUTE', time, 1) AS ts, tagid, value FROM tag
+    WHERE tagid IN ('FRONT_AXIS', 'REAR_AXIS', 'HOIST_AXIS', 'SLIDE_AXIS')
+) PIVOT (SUM(value) FOR tagid IN ('FRONT_AXIS', 'REAR_AXIS', 'HOIST_AXIS', 'SLIDE_AXIS'))
+ORDER BY ts DESC LIMIT 20;
