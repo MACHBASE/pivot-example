@@ -4,11 +4,11 @@ This example shows how to use PIVOT query on TAG table and sensor data.
 
 # Contents
 
-schema.sql   : schema file for tag table
-load.sh      : shell script file for loading tag data
-data.tgz     : CSV format file for tag data
-non-pivot.sql: query to select result data without PIVOT clause
-pivot.sql    : query to select result data with PIVOT clause
+* schema.sql   : schema file for tag table
+* load.sh      : shell script file for loading tag data
+* data.tgz     : CSV format file for tag data
+* non-pivot.sql: query to select result data without PIVOT clause
+* pivot.sql    : query to select result data with PIVOT clause
 
 # How to use
 
